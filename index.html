@@ -13,8 +13,12 @@
     <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
     <button onclick="populateTodos()">Populate Todos</button>
+    <button onclick="filterTodos()">Filter Todos</button>
     <label for="userid">UserID</label>
-    <input type="number" min="1" max="10" name="userid" id="userNum">
+    <input type="number" min="1" max="10" name="userid" id="userNum" onkeydown="return (event.keyCode!=13);">
+    <button onclick="completeTodos()">Complete Todos</button>
+    <button onclick="incompleteTodos()">Incomplete Todos</button>
+    <button onclick="clearAll()">Clear All Todos</button>
     <ol id="todo-list" class="todo-style">
         <!-- LIs will go here -->
     </ol>
