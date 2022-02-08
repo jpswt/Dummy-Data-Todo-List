@@ -28,11 +28,11 @@ const logTodos = () => {
 const populateTodos = () => {
     clearAll()
     for (i = 0; i < arrayOfTodos.length; i++) {
-        let ol = document.getElementById("todo-list")
-        let li = document.createElement("li")
+        let list = document.getElementById("todo-list")
+        let listItem = document.createElement("li")
         const text = document.createTextNode(arrayOfTodos[i].title)
-        li.appendChild(text)
-        ol.appendChild(li)
+        listItem.appendChild(text)
+        list.appendChild(listItem)
     }
 }
 
@@ -44,11 +44,11 @@ const filterTodos = () => {
     let filterArray = arrayOfTodos.filter(filter => filter.userId == userNumber)
     for (i = 0; i < filterArray.length; i++) {
         storedFilterValue.push(filterArray[i])
-        let ol = document.getElementById("todo-list")
-        let li = document.createElement("li")
+        let list = document.getElementById("todo-list")
+        let listItem = document.createElement("li")
         const text = document.createTextNode(filterArray[i].title)
-        li.appendChild(text)
-        ol.appendChild(li)
+        listItem.appendChild(text)
+        list.appendChild(listItem)
         console.log(storedFilterValue)
     }
 }
@@ -58,11 +58,11 @@ const completeTodos = () => {
     clearAll()
     for (i = 0; i < storedFilterValue.length; i++) {
         if (storedFilterValue[i].completed == true) {
-            let ol = document.getElementById("todo-list")
-            let li = document.createElement("li")
+            let list = document.getElementById("todo-list")
+            let listItem = document.createElement("li")
             const text = document.createTextNode(storedFilterValue[i].title)
-            li.appendChild(text)
-            ol.appendChild(li)
+            listItem.appendChild(text)
+            list.appendChild(listItem)
         }
     }
 }
@@ -72,11 +72,11 @@ const incompleteTodos = () => {
     clearAll()
     for (i = 0; i < storedFilterValue.length; i++) {
         if (storedFilterValue[i].completed == false) {
-            let ol = document.getElementById("todo-list")
-            let li = document.createElement("li")
+            let list = document.getElementById("todo-list")
+            let listItem = document.createElement("li")
             const text = document.createTextNode(storedFilterValue[i].title)
-            li.appendChild(text)
-            ol.appendChild(li)
+            listItem.appendChild(text)
+            list.appendChild(listItem)
 
         }
     }
