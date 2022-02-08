@@ -3,6 +3,10 @@
 	color: white;
 } */
 
+/* ol {
+	columns: 2;
+} */
+
 ol.todo-style {
-	list-style-type: disc;
+	/* list-style-type: disc; */
 }
