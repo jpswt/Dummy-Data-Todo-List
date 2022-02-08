@@ -26,7 +26,6 @@ const logTodos = () => {
 }
 
 const populateTodos = () => {
-    clearAll()
     for (i = 0; i < arrayOfTodos.length; i++) {
         let ol = document.getElementById("todo-list")
         let li = document.createElement("li")
@@ -36,4 +35,3 @@ const populateTodos = () => {
     }
 }
 
-git 
