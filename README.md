@@ -1,3 +1,3 @@
 # Dummy-Data-Todo-List
 
-Link is the the Todo-Filtering Bracnh rather than merging to main branch.  Wanted to keep both separate for comparison purposes.
+Link is set to the Todo-Filtering Branch rather than merging to main branch.  Wanted to keep both separate for comparison purposes.
